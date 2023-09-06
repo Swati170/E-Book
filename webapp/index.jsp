@@ -2,6 +2,8 @@
 <%@page import="com.DB.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+   <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +12,7 @@
 <%@include file="all_component/allCss.jsp"%>
 <style type="text/css">
 .back-img {
-	background: url("img/bg.jpg");
+	background: url("img/bg1.jpg");
 	height: 50vh;
 	width: 100%;
 	background-repeat: no repeat;
@@ -44,7 +46,7 @@ out.println(conn);
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
-         <p>Categorie:New</p>
+         <p>Categorie:Old</p>
          <div class="row " >
          <a href="" class="btn btn-danger btn-sm ml-5"><i class="fas fa-cart-plus"></i>Add Cart</a>
          <a href="" class="btn btn-Success btn-sm ml-1">View Details</a>
@@ -56,7 +58,7 @@ out.println(conn);
         <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/2.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
@@ -72,7 +74,7 @@ out.println(conn);
         <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/3.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
@@ -88,7 +90,7 @@ out.println(conn);
         <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/4.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
@@ -120,7 +122,7 @@ out.println(conn);
       <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/5.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
@@ -136,7 +138,7 @@ out.println(conn);
         <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/6.jpg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
@@ -152,7 +154,7 @@ out.println(conn);
         <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/9.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
@@ -168,7 +170,7 @@ out.println(conn);
         <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/2.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
@@ -200,11 +202,11 @@ out.println(conn);
       <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/11.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
-         <p>Categorie:New</p>
+         <p>Categorie:Old</p>
          <div class="row">
          <a href="" class="btn btn-danger btn-sm ml-5"><i class="fas fa-cart-plus"></i>Add Cart</a>
          <a href="" class="btn btn-Success btn-sm ml-1">View Details</a>
@@ -220,7 +222,7 @@ out.println(conn);
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
-         <p>Categorie:New</p>
+         <p>Categorie:Old</p>
          <div class="row">
          <a href="" class="btn btn-danger btn-sm ml-5"><i class="fas fa-cart-plus"></i>Add Cart</a>
          <a href="" class="btn btn-Success btn-sm ml-1">View Details</a>
@@ -232,11 +234,11 @@ out.println(conn);
         <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/12.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
-         <p>Categorie:New</p>
+         <p>Categorie:Old</p>
          <div class="row">
          <a href="" class="btn btn-danger btn-sm ml-5"><i class="fas fa-cart-plus"></i>Add Cart</a>
          <a href="" class="btn btn-Success btn-sm ml-1">View Details</a>
@@ -248,11 +250,11 @@ out.println(conn);
         <div class="col-md-3">
       <div class="card crd-ho">
          <div class="card-body text-center">
-             <img alt="" src="book/java1.jpeg"
+             <img alt="" src="book/10.jpeg"
              style="width:150px; height:200px" class="img-tumblin">
          <p>Java Programing</p>
          <p>Brett spell</p>
-         <p>Categorie:New</p>
+         <p>Categorie:Old</p>
          <div class="row">
          <a href="" class="btn btn-danger btn-sm ml-5"><i class="fas fa-cart-plus"></i>Add Cart</a>
          <a href="" class="btn btn-Success btn-sm ml-1">View Details</a>

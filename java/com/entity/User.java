@@ -10,7 +10,7 @@ public class User {
 	private String city;
 	private String landmark;
 	private String state;
-	private String zip;
+	private int zip;
 	
 
 	public User() {
@@ -71,10 +71,10 @@ public class User {
 	public void setState(String state) {
 		this.state = state;
 	}
-	public String getZip() {
+	public int getZip() {
 		return zip;
 	}
-	public void setZip(String zip) {
+	public void setZip(int zip) {
 		this.zip = zip;
 	}
 	@Override

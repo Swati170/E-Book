@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 import com.DAO.UserDAOImpl;
 import com.DB.DBConnect;
 import com.entity.User;
+@SuppressWarnings("serial")
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet{
 
@@ -39,14 +40,14 @@ public class RegisterServlet extends HttpServlet{
 				boolean f=dao.userRegister(us);
 				if(f)
 				{
-					//System.out.println("User Register Sucessfully");
+					//System.out.println("User Register Successfully");
 					session.setAttribute("succMsg", "User Register Sucessfully");
 				    resp.sendRedirect("register.jsp");
 				}
 				else {
 					session.setAttribute("succMsg", "User not Register Sucessfully");
 				    resp.sendRedirect("register.jsp");
-					//System.out.println("User Register not Succesfully");
+					//System.out.println("User Register not Successfully");
 				}	
 			}
 			

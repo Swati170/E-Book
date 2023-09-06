@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+   <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +11,7 @@
 </head>
 <body style="background-color:#f0f1f2;">
 <%@include file="all_component/navbar.jsp"%>
-<form  >
+<form action="login" method="post">
 <div class="container p-2">
 <div class="row ">
 <div class="col-md-4 offset-md-4">
@@ -17,16 +19,23 @@
 <div class="card-body">
 <h3 class="text-center text-black">Login Page</h3>
 
+
+
+<c:if test ="${not empty failedMsg}">
+<p class ="text-center text-danger">${failedMsg }</p> 
+<c:remove var="failedMsg" scope="session"/>
+</c:if>
+
 <div class="form-group" >
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" 
-    aria-describedby="emailHelp" placeholder="Enter email">
+    aria-describedby="emailHelp" placeholder="Enter email" required="required" name="email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1"
-     placeholder="Password">
+     placeholder="Password" required="required" name="password">
   </div>
   <div class="text-center">
   <button type="submit" class="btn btn-primary">Login</button>
